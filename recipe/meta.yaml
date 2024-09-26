@@ -1,5 +1,5 @@
 {% set name = "unique-uncertainty" %}
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unique_uncertainty-{{ version }}.tar.gz
-  sha256: b7d22a091e09081e9af6e6e7e55d301eacbd258cf8fdd9109845f33bb55b7792
+  sha256: f9053ff251ac31b946302532c581326b2edfe212da0e0d1cdcf3585e23cfc64c
 
 build:
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation 
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
@@ -52,15 +52,15 @@ test:
 
 about:
   home: https://github.com/Novartis/UNIQUE
-  summary: UNIQUE is a Python package for benchmarking uncertainty estimation and quantification methods for Machine Learning models predictions.
+  summary: "UNIQUE is a Python package for benchmarking uncertainty estimation and quantification methods for Machine Learning models predictions."
   description: |
-    UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
+    """UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
     - combine and benchmark multiple uncertainty quantification (UQ) methods simultaneously;
     - evaluate the goodness of UQ methods against established metrics;
     - generate intuitive visualizations to qualitatively assess how well the computed UQ methods represent the actual model uncertainty;
     - enable the users to get a comprehensive overview of their ML model’s performances from an uncertainty quantification perspective.
 
-    UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions.
+    UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions."""
   license: BSD-3-Clause
   license_file: LICENSE.md
   doc_url: https://opensource.nibr.com/UNIQUE
