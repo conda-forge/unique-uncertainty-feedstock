@@ -13,13 +13,13 @@ Development: https://github.com/Novartis/UNIQUE
 
 Documentation: https://opensource.nibr.com/UNIQUE
 
-UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
+"""UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
 - combine and benchmark multiple uncertainty quantification (UQ) methods simultaneously;
 - evaluate the goodness of UQ methods against established metrics;
 - generate intuitive visualizations to qualitatively assess how well the computed UQ methods represent the actual model uncertainty;
 - enable the users to get a comprehensive overview of their ML model’s performances from an uncertainty quantification perspective.
 
-UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions.
+UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions."""
 
 
 Current build status
