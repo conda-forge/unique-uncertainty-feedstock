@@ -1,5 +1,5 @@
 {% set name = "unique-uncertainty" %}
-{% set version = "0.2.1" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/unique_uncertainty-{{ version }}.tar.gz
-  sha256: f9053ff251ac31b946302532c581326b2edfe212da0e0d1cdcf3585e23cfc64c
+  sha256: 0709f5d11366a9eb47f1dc6a0dc0216e5bd35858fe1528076f1c0a5bb10935d7
 
 build:
   noarch: python
@@ -54,13 +54,17 @@ about:
   home: https://github.com/Novartis/UNIQUE
   summary: "UNIQUE is a Python package for benchmarking uncertainty estimation and quantification methods for Machine Learning models predictions."
   description: |
-    """UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
+    UNIQUE provides methods for quantifying and evaluating the uncertainty of Machine Learning (ML) models predictions. The library allows to:
+
     - combine and benchmark multiple uncertainty quantification (UQ) methods simultaneously;
+
     - evaluate the goodness of UQ methods against established metrics;
+
     - generate intuitive visualizations to qualitatively assess how well the computed UQ methods represent the actual model uncertainty;
+
     - enable the users to get a comprehensive overview of their ML model’s performances from an uncertainty quantification perspective.
 
-    UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions."""
+    UNIQUE is a model-agnostic tool, meaning that it does not depend on any specific ML model building platform nor provides any ML model training functionality. It only requires the user to input their model’s inputs and predictions.
   license: BSD-3-Clause
   license_file: LICENSE.md
   doc_url: https://opensource.nibr.com/UNIQUE
