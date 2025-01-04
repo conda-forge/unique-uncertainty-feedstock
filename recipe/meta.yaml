@@ -12,15 +12,15 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8,<=3.12.1
+    - python {{ python_min }}
     - flit-core >=3.2,<4
     - pip
   run:
-    - python >=3.8,<=3.12.1
+    - python >={{ python_min }},<3.12.2a0
     - colorcet >=3.0,<=3.0.1
     - ipykernel >=6.29,<=6.29.2
     - jinja2 >=3.1,<=3.1.3
@@ -49,6 +49,7 @@ test:
     # - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/Novartis/UNIQUE
